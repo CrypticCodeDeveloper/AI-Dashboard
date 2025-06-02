@@ -1,6 +1,6 @@
 import React from 'react'
 import {Card, CardContent} from "./ui/card.jsx";
-import {Activity, Bot, Code, Command, Database, Key, Settings, Shield, Users} from "lucide-react";
+import {Activity, Bot, Code, Command, Database, Key, Settings, Shield, Users, Book} from "lucide-react";
 import {Button} from "./ui/button.jsx";
 import {useNavigate} from "react-router-dom";
 
@@ -12,13 +12,14 @@ const AppSideBar = () => {
                 <CardContent className="p-4">
                     <nav className="space-y-2">
                         <NavItem icon={Command} href="/dashboard/overview" label="Dashboard" active />
-                        <NavItem icon={Bot} label="AI Models" />
                         <NavItem icon={Code} href="/dashboard/projects" label="Projects" />
-                        <NavItem icon={Key} label="API Keys" />
+                        <NavItem icon={Book} href="/documentation" label="Documentation" />
+                        <NavItem icon={Bot} label="AI Models" />
+                        {/*<NavItem icon={Key} label="API Keys" />*/}
                         <NavItem icon={Activity} label="Analytics" />
-                        <NavItem icon={Users} label="Usage" />
-                        <NavItem icon={Database} label="Data" />
-                        <NavItem icon={Shield} label="Security" />
+                        {/*<NavItem icon={Users} label="Usage" />*/}
+                        {/*<NavItem icon={Database} label="Data" />*/}
+                        {/*<NavItem icon={Shield} label="Security" />*/}
                         <NavItem icon={Settings} label="Settings" />
                     </nav>
 
