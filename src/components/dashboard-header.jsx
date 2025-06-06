@@ -19,7 +19,7 @@ const DashboardHeader = () => {
                     <Brain className="h-8 w-8 text-cyan-500"/>
                     <span
                         className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              DeepNexora
+              PromptusV0
             </span>
                     <Badge variant="outline" className="bg-slate-800/50 text-cyan-400 border-cyan-500/50 text-xs ml-2">
                         AI Platform
